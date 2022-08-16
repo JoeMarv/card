@@ -16,43 +16,70 @@
     <div class="card-front">
       <img src="images/card-logo.svg" alt="card-logo">
 
-      <h2>0000 0000 0000 0000</h2>
+      <h2 class="card-number">0000 0000 0000 0000</h2>
 
       <div class="details">
-        <span>Jane Appleseed</span>
-        <span> 00/00</span>
+        <span class="card-name">Jane Appleseed</span>
+        <span class="exp-date"> 00/00</span>
       </div>
     </div>
   </header>
 
+  <main class="form-container">
+    <form action="#">
+      <div class="name-div">
+        <label for="name"><h2>Cardholder Name</h2></label>
+        <input type="text" class="name" name="name" placeholder="e.g. Jane Appleseed">
+        <span class="msg"></span>
+      </div>
+      
+      <div class="number-div">
+        <label for="number"><h2>Card Number</h2></label>
+        <input type="number" class="number" name="number" placeholder="e.g. 1234 5678 9123 0000">
+        <span class="msg"></span>
+      </div>
+      
+      <div class="date-cvc">
+        <div class="date-div">
+          <label for="month year"><h2>Exp. Date (MM/YY)</h2></label>
 
+          <div class="date-input">
+            <div class="mm-div">
+              <input type='number' class="mm" name="month" placeholder="MM">
+              <span class="msg"></span>
+            </div>
+            
+            <div class="yy-div">
+              <input type='number' class='yy' name="year" placeholder="YY">
+              <span class="msg"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cvc-div">
+          <label for="cvc"><h2>CVC</h2></label>
+          <input type="number" class="cvc" name="cvc" placeholder="e.g. 123">
+          <span class="msg"></span>
+        </div>
+      </div>
 
-  <!-- 
-  
+      <button class="submit-btn" type="submit">Confirm</button>
+    </form>
 
+    <div class="submit-state">
+      <div class="icon">
+        <img src="images/icon-complete.svg" alt="icon-complete">
+      </div>
+      
+      <div class="text">
+        <h2>Thank you!</h2>
+        <span>  We've added your card details</span>
+      </div>
 
-  000
+      <button class="continue-btn">Continue</button>
+    </div>
+  </main>
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state star
-
-  Thank you!
-  We've added your card details
-  Continue -->
 
   <script src="app.js"></script>
 </body>

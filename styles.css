@@ -24,11 +24,20 @@ html {
 body {
     font-size: 18px;
     margin: 0vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--ff);
+}
+
+button {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-very-dark-violet);
 }
 
 .card-container {
@@ -59,7 +68,7 @@ body {
     width: 75vw;
     color: var(--clr-white);
     text-transform: uppercase;
-    top: 31vw;
+    top: 33vw;
     left: 6vw;
     border-radius: 2vw;
     box-shadow: 0vw 8vw 12vw rgba(0, 0, 0, 0.2);
@@ -78,6 +87,10 @@ body {
     align-self: center;
 }
 
+.card-front span {
+    letter-spacing: 0.5vw;
+}
+
 .details {
     display: flex;
     flex-direction: row;
@@ -88,3 +101,133 @@ body {
 .details span {
     font-size: 0.6em;
 }
+
+.form-container {
+    margin: 20vw 0vw 0vw 0vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin: 0vw 6vw;
+}
+
+.name-div, .number-div, .date-div, .cvc-div {
+    margin: 0vw 0vw 4vw 0vw;
+}
+
+label h2 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--clr-very-dark-violet);
+    font-weight: 600;
+    letter-spacing: 0.5vw;
+    margin: 2vw 0vw;
+}
+
+input {
+    width: 92%;
+    padding: 4vw 0vw 4vw 6vw;
+    border-radius: 2vw;
+    border: 1px solid var(--clr-light-grayish-violet);
+    font-family: var(--ff);
+    font-size: 0.8em;
+    color: var(--clr-very-dark-violet);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+input:focus {
+    border: 1px solid var(--clr-very-dark-violet);
+}
+
+.msg {
+    font-size: 0.6em;
+    width: auto;
+}
+
+::placeholder {
+    color: var(--clr-dark-grayish-violet);
+}
+
+.date-input {
+    display: flex;
+    flex-direction: row;
+    width: 47vw;
+}
+
+.date-cvc {
+    display: flex;
+    flex-direction: row;
+}
+
+.mm-div, .yy-div {
+    display: flex;
+    flex-direction: column;
+    width: 42%
+}
+
+.mm, .yy {
+    width: 70%;
+    margin: 0vw 0vw 2vw 0vw;
+}
+
+.yy-div {
+    margin:0vw 0vw 0vw 3vw;
+}
+
+.cvc {
+    width: 80%;
+}
+
+.submit-btn {
+    font-family: var(--ff);
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: var(--clr-very-dark-violet);
+    width: 100%;
+    margin: 4vw 0vw 0vw 0vw;
+    padding: 4vw 0vw;
+    border-radius: 2vw;
+    border: 1px solid var(--clr-very-dark-violet);
+}
+
+/* Submit State Start*/
+.submit-state {
+    margin: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.text h2 {
+    text-transform: uppercase;
+    color: var(--clr-very-dark-violet);
+    letter-spacing: 0.5vw;
+    font-weight: 600;
+}
+
+.text span {
+    color: var(--clr-dark-grayish-violet);
+}
+
+.continue-btn {
+    font-family: var(--ff);
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: var(--clr-very-dark-violet);
+    width: 100%;
+    margin: 12vw 0vw 0vw 0vw;
+    padding: 4vw 0vw;
+    border-radius: 2vw;
+    border: 1px solid var(--clr-very-dark-violet);
+}
+
+/* Submit State End */
