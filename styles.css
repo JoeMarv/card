@@ -113,6 +113,10 @@ form {
     margin: 0vw 6vw;
 }
 
+.form.show {
+    display: none;
+}
+
 .name-div, .number-div, .date-div, .cvc-div {
     margin: 0vw 0vw 4vw 0vw;
 }
@@ -148,7 +152,7 @@ input:focus {
 }
 
 ::placeholder {
-    color: var(--clr-dark-grayish-violet);
+    color: var(--clr-light-grayish-violet);
 }
 
 .date-input {
@@ -205,6 +209,10 @@ input:focus {
     display: none;
 }
 
+.submit-state.show {
+    display: flex;
+}
+
 .text h2 {
     text-transform: uppercase;
     color: var(--clr-very-dark-violet);
@@ -229,5 +237,4 @@ input:focus {
     border-radius: 2vw;
     border: 1px solid var(--clr-very-dark-violet);
 }
-
 /* Submit State End */
