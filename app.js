@@ -25,6 +25,15 @@ number.addEventListener('keyup', function(e) {
     cardNumber.textContent = number.value
 })
 
+number.onkeydown = function () {
+    if (number.value.length > 0) {
+
+        if (number.value.length % 4 == 0) {
+            number.value += "    ";
+        }
+    }
+}
+
 
 
 //MONTH
@@ -39,6 +48,12 @@ year.addEventListener('keyup', function(e) {
     cardYear.textContent = year.value
 })
 
+
+
+//BUTTON 
+submitBtn.addEventListener('click', function(e) {
+    e.preventDefault
+})
 
 
 //FUNCTIONS
