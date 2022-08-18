@@ -21,6 +21,7 @@ form.addEventListener('submit', function (e) {
 })
 
 
+
 //NAME
 name.addEventListener('keyup', function(e) {
     cardName.textContent = name.value
@@ -88,12 +89,13 @@ inputs.forEach(function(input) {
     submitBtn.addEventListener('click', function() {
         if (input.value.length === 0) {
             input.parentElement.classList.add('error')
+            submitState.classList.remove('show')
+            form.classList.remove('show')
             return false
         }
 
         else {
             input.parentElement.classList.remove('error')
-
             submitState.classList.add('show')
             form.classList.add('show')
             return true
