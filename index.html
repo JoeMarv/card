@@ -30,13 +30,13 @@
       <div class="name-div">
         <label for="name"><h2>Cardholder Name</h2></label>
         <input type="text" class="name" name="name" placeholder="e.g. Jane Appleseed" maxlength="25"/>
-        <span class="msg"></span>
+        <span class="msg">Can't be blank</span>
       </div>
       
       <div class="number-div">
         <label for="number"><h2>Card Number</h2></label>
         <input class="number" name="number" type="text" class="textfield" placeholder="e.g. 1234 5678 9123 0000" onkeypress="return isNumber(event)" size="28" maxlength="28" required/>
-        <span class="msg"></span>
+        <span class="msg">Can't be blank</span>
       </div>
       
       <div class="date-cvc">
@@ -46,12 +46,12 @@
           <div class="date-input">
             <div class="mm-div">
               <input type='text' class="mm" name="month" placeholder="MM" maxlength="2" minlength="2" required onkeypress="return isNumber(event)"/>
-              <span class="msg"></span>
+              <span class="msg">Can't be blank</span>
             </div>
             
             <div class="yy-div">
               <input type='text' class="yy" name="year" placeholder="YY" maxlength="2" minlength="2" required onkeypress="return isNumber(event)"/>
-              <span class="msg"></span>
+              <span class="msg">Can't be blank</span>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
         <div class="cvc-div">
           <label for="cvc"><h2>CVC</h2></label>
           <input type="text" class="cvc" name="cvc" placeholder="e.g. 123" minlength="3" maxlength="3" required onkeypress="return isNumber(event)"/>
-          <span class="msg"></span>
+          <span class="msg">Can't be blank</span>
         </div>
       </div>
 

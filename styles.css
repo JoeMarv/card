@@ -146,10 +146,22 @@ input:focus {
     border: 1px solid var(--clr-very-dark-violet);
 }
 
+/* Error toggle start*/
 .msg {
     font-size: 0.6em;
     width: auto;
+    color: var(--clr-red);
+    display: none;
 }
+
+.error .msg {
+    display: inline;
+}
+
+.error input {
+    border: 1px solid var(--clr-red);
+}
+/* Error toggle end */
 
 ::placeholder {
     color: var(--clr-light-grayish-violet);

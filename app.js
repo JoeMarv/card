@@ -11,11 +11,23 @@ const cardYear = document.querySelector('.card-year')
 const cvc = document.querySelector('.cvc')
 const submitBtn = document.querySelector('.submit-btn')
 const continueBtn = document.querySelector('.continue-btn')
+const inputs = document.querySelectorAll('input')
+
+
+
+//FORM
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
+})
 
 
 //NAME
 name.addEventListener('keyup', function(e) {
     cardName.textContent = name.value
+})
+
+name.addEventListener('invalid', function() {
+    this.setCustomValidity(' ')
 })
 
 
@@ -35,10 +47,20 @@ number.onkeydown = function () {
 }
 
 
+number.addEventListener('invalid', function() {
+    this.setCustomValidity(' ')
+})
+
+
 
 //MONTH
 month.addEventListener('keyup', function(e) {
     cardMonth.textContent = month.value
+})
+
+
+month.addEventListener('invalid', function() {
+    this.setCustomValidity(' ')
 })
 
 
@@ -49,12 +71,56 @@ year.addEventListener('keyup', function(e) {
 })
 
 
-
-//BUTTON 
-submitBtn.addEventListener('click', function(e) {
-    e.preventDefault
+year.addEventListener('invalid', function() {
+    this.setCustomValidity(' ')
 })
 
+
+
+//CVC
+cvc.addEventListener('invalid', function() {
+    this.setCustomValidity(' ')
+})
+
+
+//BUTTON 
+inputs.forEach(function(input) {
+    submitBtn.addEventListener('click', function() {
+        if (input.value.length === 0) {
+            input.parentElement.classList.add('error')
+            return false
+        }
+
+        else {
+            input.parentElement.classList.remove('error')
+
+            submitState.classList.add('show')
+            form.classList.add('show')
+            return true
+        }
+    })
+})
+
+submitBtn.addEventListener('click', function(e) {
+    e.preventDefault()
+})
+
+
+
+continueBtn.addEventListener('click', function() {
+    submitState.classList.remove('show')
+    form.classList.remove('show')
+
+    cardName.textContent = 'Jane Appleseed'
+    cardNumber.textContent = '0000 0000 0000 0000'
+    cardMonth.textContent = '00'
+    cardYear.textContent = '00'
+    name.value = ''
+    number.value = ''
+    month.value = ''
+    year.value = ''
+    cvc.value = ''
+})
 
 //FUNCTIONS
 function isNumber(evt) {
