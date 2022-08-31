@@ -250,3 +250,167 @@ input:focus {
     border: 1px solid var(--clr-very-dark-violet);
 }
 /* Submit State End */
+
+
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh
+    }
+
+    .card-container {
+        background-image: url(images/bg-main-desktop.png);
+        width: 35vw;
+        height: 100vh;
+        padding: 0vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-back img {
+        width: 30vw;
+        height: auto;
+        margin: 36vw 0vw 0vw 30vw;
+    }
+    
+    .card-front {
+        position: relative;
+        width: 30vw;
+        color: var(--clr-white);
+        text-transform: uppercase;
+        top: -39vw;
+        left: 8vw;
+        border-radius: 1vw;
+        box-shadow: 0vw 4vw 6vw rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-front img {
+        width: 5vw;
+        height: auto;
+        margin: 3vw;
+    }
+    
+    .card-front h2 {
+        margin: 1vw 0vw 1.5vw 0vw;
+        font-size: 0.8em;
+        letter-spacing: 0.25vw;
+    }
+    
+    .card-front span {
+        letter-spacing: 0.25vw;
+    }
+    
+    .details {
+        margin: 0vw 2vw 3vw 2vw;
+    }
+    
+    .details span {
+        font-size: 0.65rem;
+    }
+    
+    .form-container {
+        margin: 0vw;
+        width: 65vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        margin: 0vw 0vw 0vw 10vw;
+        width: 30vw
+    }
+    
+    .form.show {
+        display: none;
+    }
+    
+    .name-div, .number-div, .date-div, .cvc-div {
+        margin: 0vw 0vw 2vw 0vw;
+    }
+    
+    label h2 {
+        font-size: 0.4em;
+        letter-spacing: 0.25vw;
+        margin: 1vw 0vw;
+    }
+    
+    input {
+        width: 96%;
+        padding: 1vw 0vw 1vw 1vw;
+        border-radius: 0.75vw;
+        font-size: 0.5em;
+    }
+
+    /* Error toggle start*/
+    .msg {
+        font-size: 0.4em;
+    }
+    /* Error toggle end */
+    
+    .date-input {
+        width: 16vw;
+    }
+   
+    .mm-div, .yy-div {
+        display: flex;
+        flex-direction: column;
+        width: 10vw
+    }
+    
+    .mm, .yy {
+        width: 5vw;
+        margin: 0vw 0vw 1vw 0vw;
+    }
+    
+    .yy-div {
+        margin: 0vw 0vw 0vw 0vw;
+    }
+    
+    .cvc {
+        width: 91%;
+        margin: 0vw 0vw 1vw 0vw;
+    }
+    
+    .cvc-div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .submit-btn {
+        font-size: 0.5em;
+        margin: 2vw 0vw 0vw 0vw;
+        padding: 2vw 0vw;
+        border-radius: 1vw;
+    }
+    
+    /* Submit State Start*/
+    .submit-state {
+        margin: 0vw 0vw 0vw 10vw;
+        width: 30vw
+    }
+
+    .submit-state img  {
+        width: 50%;
+        height: auto;
+    }
+   
+    .text h2 {
+        letter-spacing: 0.25vw;
+        font-size: 1.2em
+    }
+
+    .text span {
+        font-size: 0.8em;
+    }
+    
+    .continue-btn {
+        font-size: 0.6em;
+        margin: 4vw 0vw 0vw 0vw;
+        padding: 1.5vw 0vw;
+        border-radius: 1vw;
+        width: 38vw
+    }
+    /* Submit State End */
+}
