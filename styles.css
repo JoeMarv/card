@@ -414,3 +414,122 @@ input:focus {
     }
     /* Submit State End */
 }
+
+
+/* Desktop View */
+@media only screen and (min-width: 1440px) {
+    .card-back img {
+        width: 30vw;
+        height: auto;
+        margin: 36vw 0vw 0vw 35vw;
+    }
+    
+    .card-front {
+        position: relative;
+        width: 30vw;
+        color: var(--clr-white);
+        text-transform: uppercase;
+        top: -37vw;
+        left: 10vw;
+        border-radius: 0.5vw;
+    }
+    
+    .card-front img {
+        width: 5vw;
+        height: auto;
+        margin: 3vw;
+    }
+    
+    .card-front h2 {
+        margin: 1vw 0vw 1.5vw 0vw;
+        font-size: 1.4em;
+        letter-spacing: 0.3vw;
+    }
+    
+    .card-front span {
+        letter-spacing: 0.3vw;
+    }
+    
+    .details {
+        margin: 0vw 2.5vw 2vw 2.5vw;
+    }
+    
+    .details span {
+        font-size: 0.9em;
+    }
+    
+    .form-container {
+        margin: 0vw;
+        width: 65vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    form {
+        margin: 0vw 0vw 0vw 10vw;
+        width: 30vw
+    }
+    
+    .form.show {
+        display: none;
+    }
+    
+    .name-div, .number-div, .date-div, .cvc-div {
+        margin: 0vw 0vw 2vw 0vw;
+    }
+    
+    label h2 {
+        font-size: 0.6em;
+        letter-spacing: 0.25vw;
+        margin: 1vw 0vw;
+    }
+    
+    input {
+        width: 96%;
+        padding: 1vw 0vw 1vw 1vw;
+        border-radius: 0.5vw;
+        font-size: 0.8em;
+    }
+
+    /* Error toggle start*/
+    .msg {
+        font-size: 0.6em;
+    }
+    /* Error toggle end */
+    
+    .submit-btn {
+        font-size: 0.8em;
+        margin: 2vw 0vw 0vw 0vw;
+        padding: 1vw 0vw;
+        border-radius: 0.5vw;
+    }
+    
+    /* Submit State Start*/
+    .submit-state {
+        margin: 0vw 0vw 0vw 10vw;
+        width: 30vw
+    }
+
+    .submit-state img  {
+        width: 80%;
+        height: auto;
+    }
+   
+    .text h2 {
+        letter-spacing: 0.25vw;
+        font-size: 1.5em
+    }
+
+    .text span {
+        font-size: 1em;
+    }
+    
+    .continue-btn {
+        font-size: 0.8em;
+        margin: 4vw 0vw 0vw 0vw;
+        padding: 1vw 0vw;
+        border-radius: 0.5vw;
+        width: 30vw
+    }
+    /* Submit State End */
+}
